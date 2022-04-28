@@ -61,3 +61,13 @@ e.g git checkout main
 -git branch -d “nombre rama”
 3. Borrar la rama remota
 -git push origin —delete “nombre rama”
+
+Integracion de cambios de una rama a otra
+
+1. Actualizar ambas ramas 
+-git fetch
+-git pull
+2. Nos cambiamos a la rama que va a recibir los cambios 
+-git checkout “rama”
+3. Integrar los cambios de la rama que los contiene
+- git merge “rama con cambios”
