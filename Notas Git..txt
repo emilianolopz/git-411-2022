@@ -1,0 +1,43 @@
+# Funcionamiento GIT
+
+Local:
+
+Codigo en la pc y todos sus cambios
+
+Tiene codigo más actualizado que origin 
+
+remote/origin:
+
+codigo en la nube
+
+origin-main
+
+commit: Conjunto de cambios, lleva explicacion del motivo por el cual se hizo, para poder rastrear que es lo que se hizo, para detectar posibles errores que pasaron por alto
+
+git clone <repo URL> Descarga el repositorio desde la nube y crea una copia de la rama main
+
+Ejemplo
+
+git clone [https://github.com/emilianolopz/git-411-2022.git](https://github.com/emilianolopz/git-411-2022.git)
+
+git status: nos permite conocer el estado de sincronizacion de la rama remota y local y nos muestra si hay archivos modificados y pendientes de sincronizar 
+
+pasos para subir cambios:
+
+1. Preparar (hacer track/stage) de los archivos que queremos subir
+-git add “<Nombre Archivo>”
+-git restore  - - stage “Nombre archivo”  (Hacer unstage de un archivo, para no subirlo)
+2. Crear un commint
+-Un commit es un conjunto de cambios con un mensaje que los describa
+- git commit -m “mensaje”
+3. Sincronizamos la rama remota con los cambios en la rama local
+-git push 
+- En caso de que pida credenciales ( git config —global [user.email](http://user.email) “email”
+- git config —global [user.name](http://user.name) “nombre” 
+
+ Para descargar cambios desde la nube:
+
+1. Actualizar el historial de commits
+-git fetch
+2. Sincronizar la rama local con la rama remota 
+-git pull
