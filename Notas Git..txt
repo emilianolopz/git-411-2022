@@ -41,3 +41,23 @@ pasos para subir cambios:
 -git fetch
 2. Sincronizar la rama local con la rama remota 
 -git pull
+
+Creacion de ramas
+
+Una rama es una subdivision de otra rama a partir de cierto punto.
+
+1. Crear rama localmente
+-git checkout -b “Nombre-rama”
+
+1. Subir la rama al repositorio en la nube
+-git push —set-upstream origin “nombre rama”
+
+Eliminacion de ramas
+
+1. Cambiarse a otra rama diferente a la que se quiere borrar
+-git checkout “nombre de la rama a la cual cambiarte”
+e.g git checkout main
+2. Borrar la rama local 
+-git branch -d “nombre rama”
+3. Borrar la rama remota
+-git push origin —delete “nombre rama”
